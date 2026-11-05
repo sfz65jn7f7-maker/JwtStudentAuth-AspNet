@@ -1,0 +1,89 @@
+# ============================================================
+# .gitignore - StudentAuth.Api (ASP.NET Core / Visual Studio)
+# ============================================================
+
+# --- Dossiers de compilation ---
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Ll]og/
+[Ll]ogs/
+publish/
+artifacts/
+
+# --- Visual Studio ---
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.rsuser
+launchSettings.json.bak
+
+# --- Visual Studio Code / JetBrains ---
+.vscode/
+.idea/
+*.swp
+
+# --- Résultats de tests et couverture ---
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+coverage/
+*.coverage
+*.coveragexml
+
+# --- NuGet ---
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# --- Secrets et configuration locale ---
+# La SecretKey JWT ne doit jamais être versionnée dans un vrai dépôt.
+# Utiliser les user-secrets (dotnet user-secrets) ou des variables d'environnement.
+secrets.json
+appsettings.Local.json
+appsettings.*.Local.json
+*.pfx
+*.p12
+*.snk
+.env
+.env.*
+
+# --- Fichiers générés par .NET ---
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.tmp
+*.tmp_proj
+*.bak
+*.orig
+
+# --- Base de données locale (si utilisation de SQLite ou fichiers MDF) ---
+*.mdf
+*.ldf
+*.ndf
+*.sqlite
+*.sqlite3
+*.db
+
+# --- Système d'exploitation ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Exports Postman contenant des tokens (à vérifier avant de versionner) ---
+*.postman_environment.json
+
+# ------------------------------------------------------------
+# À NE PAS ignorer : le dossier Migrations/ doit rester versionné
+# ------------------------------------------------------------
